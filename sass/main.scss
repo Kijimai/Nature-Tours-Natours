@@ -13,16 +13,14 @@ Dark green: #28b485
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-@import "base/base"; // no underscore necessary or file type for sass to understand
+@import "base/base";
 @import "base/animations";
 @import "base/typography";
 @import "base/utilities";
 
 @import "components/button";
 
+@import "layout/grid";
 @import "layout/header";
 
 @import "pages/home";
-
-
-
