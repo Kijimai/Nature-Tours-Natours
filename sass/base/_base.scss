@@ -4,13 +4,15 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  /*Automatically inherits what is specified by on the later border-box*/ }
+  /*Automatically inherits what is specified by on the later border-box*/
+}
 
 html {
   //this defines what 1rem is -- 10px
-  font-size: 62.5%; 
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
