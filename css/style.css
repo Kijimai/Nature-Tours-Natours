@@ -54,6 +54,12 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+}
+@media screen and (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
 }
 
 /* ------------------------Keyframes --------------------- */
@@ -102,7 +108,6 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
 }
 
 .heading-primary {
@@ -117,12 +122,24 @@ body {
   letter-spacing: 1rem;
   animation: moveInLeft 1.2s ease-out;
 }
+@media screen and (max-width: 37.5em) {
+  .heading-primary--main {
+    letter-spacing: 1rem;
+    font-size: 5rem;
+  }
+}
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.75rem;
   animation: moveInRight 1.2s ease-out;
+}
+@media screen and (max-width: 37.5em) {
+  .heading-primary--sub {
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+  }
 }
 
 .heading-secondary {
@@ -135,6 +152,16 @@ body {
   color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 56.25em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2rem;
+  }
 }
 .heading-secondary:hover {
   transform: scale(1.2) skewX(15deg) skewY(-5deg);
@@ -680,6 +707,18 @@ body {
   text-align: center;
   cursor: pointer;
 }
+@media screen and (max-width: 56.25em) {
+  .navigation__button {
+    top: 4.5rem;
+    right: 4.5rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .navigation__button {
+    top: 3rem;
+    right: 3rem;
+  }
+}
 .navigation__background {
   height: 6rem;
   width: 6rem;
@@ -692,6 +731,18 @@ body {
   background-image: radial-gradient(#55c57a, #28b485);
   transition: transform 0.8s ease;
 }
+@media screen and (max-width: 56.25em) {
+  .navigation__background {
+    top: 4.5rem;
+    right: 4.5rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .navigation__background {
+    top: 3rem;
+    right: 3rem;
+  }
+}
 .navigation__nav {
   height: 100vh;
   width: 0;
@@ -700,6 +751,8 @@ body {
   right: 0;
   z-index: 1100;
   opacity: 0;
+  user-select: none;
+  pointer-events: none;
   transition: opacity 0.8s ease, width 0.6s ease;
 }
 .navigation__list {
@@ -738,6 +791,8 @@ body {
   transform: scale(80);
 }
 .navigation__checkbox:checked ~ .navigation__nav {
+  user-select: initial;
+  pointer-events: initial;
   opacity: 1;
   width: 100%;
 }
@@ -788,6 +843,17 @@ body {
 .row:not(:last-child) {
   margin-bottom: 8rem;
 }
+@media screen and (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (max-width: 56.25em) {
+  .row {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+}
 .row::after {
   content: "";
   display: block;
@@ -798,6 +864,17 @@ body {
 }
 .row [class^=col-]:not(:last-child) {
   margin-right: 6rem;
+}
+@media screen and (max-width: 56.25em) {
+  .row [class^=col-]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (max-width: 56.25em) {
+  .row [class^=col-] {
+    width: 100% !important;
+  }
 }
 .row .col-1-of-2 {
   width: calc((100% - 6rem) / 2);
@@ -827,6 +904,11 @@ body {
   /*choose a coordinate for each point of the target element*/
   position: relative;
 }
+@media screen and (max-width: 37.5em) {
+  .header {
+    clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+  }
+}
 .header__logo-box {
   position: absolute;
   top: 4rem;
@@ -848,6 +930,11 @@ body {
   padding: 10rem 0;
   font-size: 1.4rem;
 }
+@media screen and (max-width: 56.25em) {
+  .footer {
+    padding: 8rem 0;
+  }
+}
 .footer__logo-box {
   text-align: center;
 }
@@ -859,6 +946,12 @@ body {
   border-top: 0.1rem solid #999;
   padding-top: 2rem;
   display: inline-block;
+}
+@media screen and (max-width: 56.25em) {
+  .footer__navigation {
+    width: 100%;
+    text-align: center;
+  }
 }
 .footer__list {
   list-style: none;
@@ -888,6 +981,12 @@ body {
   border-top: 0.1rem solid #999;
   padding-top: 2rem;
   color: #f7f7f7;
+}
+@media screen and (max-width: 56.25em) {
+  .footer__copyright {
+    width: 80%;
+    float: none;
+  }
 }
 
 .section-about {
