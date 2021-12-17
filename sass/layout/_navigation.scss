@@ -43,13 +43,13 @@
     transition: transform 0.8s ease;
 
     @include respond(tab-port) {
-      top: 4.5rem;
-      right: 4.5rem;
+      top: 5rem;
+      right: 5rem;
     }
 
     @include respond(phone) {
-      top: 3rem;
-      right: 3rem;
+      top: 3.5rem;
+      right: 3.5rem;
     }
   }
 
