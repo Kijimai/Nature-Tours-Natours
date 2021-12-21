@@ -299,7 +299,11 @@
                 I had the best week ever with my family.
               </h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas reiciendis accusantium magni doloremque odio, porro inventore vitae repudiandae dolorem doloribus. Pariatur molestias temporibus vitae voluptatum ipsa laudantium, facilis officia debitis et eius quasi porro illum?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
+                reiciendis accusantium magni doloremque odio, porro inventore
+                vitae repudiandae dolorem doloribus. Pariatur molestias
+                temporibus vitae voluptatum ipsa laudantium, facilis officia
+                debitis et eius quasi porro illum?
               </p>
             </div>
           </div>
@@ -320,7 +324,11 @@
                 Wow! My life is completely different now!
               </h3>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, dolore temporibus officia laboriosam ex rem sed voluptate asperiores ducimus natus atque earum enim numquam incidunt porro ullam. Quis totam labore necessitatibus ut id asperiores aliquam, officia reprehenderit, blanditiis, similique placeat.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est,
+                dolore temporibus officia laboriosam ex rem sed voluptate
+                asperiores ducimus natus atque earum enim numquam incidunt porro
+                ullam. Quis totam labore necessitatibus ut id asperiores
+                aliquam, officia reprehenderit, blanditiis, similique placeat.
               </p>
             </div>
           </div>
@@ -401,8 +409,21 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__logo-box u-margin-bottom-8">
-        <img src="img/logo-green-2x.png" alt="full logo" class="footer__logo" />
+      <div class="footer__logo-box">
+        <picture class="footer__logo">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+            alt="full logo"
+            class="footer__logo"
+          />
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">
