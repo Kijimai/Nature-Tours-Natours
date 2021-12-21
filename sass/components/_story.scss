@@ -24,9 +24,10 @@
     width: 15rem;
     height: 15rem;
     float: left;
-    // border-radius: 50%;
     shape-outside: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
+    // clip-path: circle(50% at 50% 50%);
+    border-radius: 50%;
+    overflow: hidden;
     transform: translateX(-3rem) skewX(12deg);
 
     @include respond(phone) {
